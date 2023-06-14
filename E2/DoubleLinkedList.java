@@ -1,11 +1,13 @@
+import org.w3c.dom.Node;
+
 public class DoubleLinkedList {
 
-    static Node ptr; // Primer elemento de la lista
+    static Node ptr;
     
-    /**
-     * Añadir elemento a la lista.
-     * @param elem Elemento que sera añadido.
-     */
+    public DoubleLinkedList (E A){
+        ptr = Node(A);
+    }
+
     void addElem(int elem) {
         Node nuevo = new Node(); // Crear nuevo nodo
 
@@ -20,8 +22,7 @@ public class DoubleLinkedList {
             while (p != null) {
                 ant = p;
                 p = p.RLink;
-            }
-			
+            }		
           /**
           * null <-|n|=|ant|-> null
           * =|ant|<-|nuevo|
@@ -35,6 +36,13 @@ public class DoubleLinkedList {
                 ant.RLink = nuevo;
             }
         }
+    }
+
+    public Node<T> get(int indice) {
+        Node<T> aux=raiz;
+        for(int i=0;i<indice;i++)
+            aux=aux.getNextNode();
+        return aux;
     }
 
     /**

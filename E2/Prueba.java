@@ -16,7 +16,7 @@
         public static DoubleLinkedList generarPeorCaso(int t) {
             DoubleLinkedList lista = new DoubleLinkedList();
             for (int i=0; i<t; i++) {
-                lista[i] = t-i;		
+                		
             }
             return lista;		
         }
