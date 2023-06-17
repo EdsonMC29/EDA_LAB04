@@ -2,8 +2,10 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
 
-public class Prueba {
+import com.panayotis.gnuplot.JavaPlot;
+import com.panayotis.gnuplot.plot.AbstractPlot;
 
+public class Prueba {
     public static void main(String[] args) throws IOException {
         int tamano;
 
