@@ -21,7 +21,7 @@ public class Node<T>{ //Definimos nuestra clase Nodo como generica con parametro
     public Node<T> getNextNode(){
         return nextNode;//Retornamos la referencia al siguiente nodo
     }
-    public void setNexNode(Node<T> nextNode){
+    public void setNextNode(Node<T> nextNode){
         this.nextNode = nextNode;//Siguiente nodo con el valor proporcionado.
     }
     @Override
